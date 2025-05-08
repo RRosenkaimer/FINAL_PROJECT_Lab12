@@ -157,7 +157,7 @@ class Logic:
 
         def volume_up(self) -> None:
             """
-            Increases volume by one unit, up to MAX_VOLUME. Unmutes TV if muted.
+            Increases volume by one tick, up to MAX_VOLUME. Unmutes TV if muted.
 
             :return: None
             """
@@ -179,7 +179,7 @@ class Logic:
 
         def volume_down(self) -> None:
             """
-            Decreases the volume by one unit down to MIN_VOLUME.
+            Decreases the volume by one tick down to MIN_VOLUME.
             If muted, unmutes the TV and restores the previous volume before decreasing.
             :return: None
             """
