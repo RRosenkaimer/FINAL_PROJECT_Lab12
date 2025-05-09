@@ -62,6 +62,7 @@ class Logic:
             self.slider_volume.valueChanged.connect(self.slider_volume_change)
 
             self.stackedWidget.setCurrentIndex(0)
+            self.slider_volume.setEnabled(False)
 
 
         def mute(self) -> None:
@@ -88,6 +89,10 @@ class Logic:
                 if slider != self.__volume:
                     self.__volume = slider
                     self.lcd_volume.display(self.__volume)
+                #     self.slider_volume.setEnabled(True)
+                # else:
+                #     self.slider_volume.setEnabled(False)
+
 
 
         def guide(self)-> None:
@@ -112,9 +117,11 @@ class Logic:
             if self.__status:
                 self.__channel = self.MIN_CHANNEL
                 self.set_channel(self.__channel)
+                self.slider_volume.setEnabled(True)
 
             else:
                 self.stackedWidget.setCurrentIndex(0)
+                self.slider_volume.setEnabled(False)
 
 
         def exit(self):

@@ -315,7 +315,7 @@ class Ui_TVRemote(object):
 
     def retranslateUi(self, TVRemote):
         _translate = QtCore.QCoreApplication.translate
-        TVRemote.setWindowTitle(_translate("TVRemote", "Dialog"))
+        TVRemote.setWindowTitle(_translate("TVRemote", "TV Remote"))
         self.button_volume_up.setText(_translate("TVRemote", "+"))
         self.button_volume_down.setText(_translate("TVRemote", "-"))
         self.button_hulu.setText(_translate("TVRemote", "Hulu"))
